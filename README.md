@@ -38,18 +38,18 @@ The firmware follows a non-blocking architecture to ensure stable sampling and s
 
 Each parameter is evaluated using defined thresholds and classified into:
 
-- Normal
-- Warning
-- Critical
-- Sensor Fault
+- Normal (Green)
+- Warning (Yellow)
+- Critical (Red)
+- Sensor Fault (Purple)
 
-The dashboard visually reflects the current state of the system.
+The dashboard visually (using different volored labels) reflects the current state of the system.
 
 
 
 ## Hardware Schematic
 
-Below is the Implemented circuit used in this project:
+Below is the Implemented circuit used in this project: also the Pinout on the modules is provided in the report file(The Second Attachment).
 
 ![Hardware Schematic](Images/Implemented_On_Breadboard.jpg)
 
@@ -57,7 +57,7 @@ Below is the Implemented circuit used in this project:
 
 ## Web Dashboard Preview
 
-Real-time monitoring interface hosted directly on ESP32:
+Real-time monitoring User-Interface hosted directly on ESP32:
 
 ![Web Dashboard](Images/critical.png)
 
@@ -69,7 +69,7 @@ Real-time monitoring interface hosted directly on ESP32:
 - Embedded Web Server (no cloud dependency)  
 - Wi-Fi based local monitoring  
 - Threshold-based alarm system  
-- Sensor fault detection  
+- Medical signal processing 
 - Modular and extendable design  
 
 

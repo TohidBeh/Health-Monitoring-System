@@ -2,43 +2,41 @@
 
 ### Real-Time Vital Sign Monitoring Using ESP32
 
-A wearable IoT-based health monitoring system designed to measure vital signs in real time and display them through an embedded web dashboard.  
-The system runs entirely on an ESP32 microcontroller and does not rely on external cloud services.
+A wearable IOT-based health monitoring system designed to measure vital signs in real time and display them through an embedded web dashboard.  
+The system runs completely on an ESP32 microcontroller and does not rely on external cloud services.
 
----
 
 ## Overview
 
-This project continuously monitors essential physiological and environmental parameters and presents them in a clean browser-based dashboard.
+This project continuously monitors vital physiological and environmental parameters and presents them in a minimal web dashboard.
 
 The system measures:
 
 - Heart Rate (BPM)
-- Blood Oxygen Saturation (SpO₂)
+- Blood oxygen Saturation (SpO₂)
 - Body Temperature
 - Room Temperature
 - Room Humidity
 
-All data are processed locally and served via an embedded web server hosted on the ESP32.
+All data are processed locally and send via an embedded web server hosted on the ESP32.
 
----
+
 
 ## System Architecture
 
 The system consists of:
 
-- **ESP32** as the main controller and Wi-Fi interface  
-- **MAX30100** for Heart Rate and SpO₂  
-- **DS18B20** for Body Temperature  
-- **DHT22** for Room Temperature and Humidity  
+- **ESP32**: as the main controller and Wi-Fi interface  
+- **MAX30100**: for Heart Rate and SpO₂  
+- **DS18B20**: for Body Temperature  
+- **DHT22**: for Room Temperature and Humidity  
 
 The firmware follows a non-blocking architecture to ensure stable sampling and smooth Wi-Fi communication.
 
----
 
 ## Abnormality Detection
 
-Each parameter is evaluated using predefined thresholds and classified into:
+Each parameter is evaluated using defined thresholds and classified into:
 
 - Normal
 - Warning
@@ -47,23 +45,23 @@ Each parameter is evaluated using predefined thresholds and classified into:
 
 The dashboard visually reflects the current state of the system.
 
----
+
 
 ## Hardware Schematic
 
-Below is the circuit schematic used in this project:
+Below is the Implemented circuit used in this project:
 
-![Hardware Schematic](LINK_TO_YOUR_SCHEMATIC_IMAGE)
+![Hardware Schematic](Images/Implemented_On_Breadboard.jpg)
 
----
+
 
 ## Web Dashboard Preview
 
 Real-time monitoring interface hosted directly on ESP32:
 
-![Web Dashboard](LINK_TO_YOUR_WEB_DASHBOARD_IMAGE)
+![Web Dashboard](Images/critical.png)
 
----
+
 
 ## Key Features
 
@@ -74,7 +72,6 @@ Real-time monitoring interface hosted directly on ESP32:
 - Sensor fault detection  
 - Modular and extendable design  
 
----
 
 ## How to Use
 
@@ -84,14 +81,9 @@ Real-time monitoring interface hosted directly on ESP32:
 4. Open Serial Monitor to find device IP  
 5. Access the dashboard via browser  
 
----
+
 
 ## Project Status
 
 Final stable version – developed for academic and research purposes.
 
----
-
-## License
-
-This project is developed as part of an academic work.
